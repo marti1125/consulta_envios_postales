@@ -1,14 +1,14 @@
 {
-  "name": "electron-quick-start",
+  "name": "consulta_envios_postales",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Consulta Envios Postales",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron/electron-quick-start.git"
+    "url": "git+https://github.com/marti1125/consulta_envios_postales.git"
   },
   "keywords": [
     "Electron",
@@ -17,12 +17,13 @@
     "tutorial"
   ],
   "author": "GitHub",
-  "license": "CC0-1.0",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/electron/electron-quick-start/issues"
+    "url": "https://github.com/marti1125/consulta_envios_postales.git"
   },
-  "homepage": "https://github.com/electron/electron-quick-start#readme",
+  "homepage": "https://github.com/marti1125/consulta_envios_postales#readme",
   "devDependencies": {
+    "electron-packager": "^7.1.0",
     "electron-prebuilt": "^1.2.0"
   }
 }
