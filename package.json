@@ -11,12 +11,11 @@
     "url": "git+https://github.com/marti1125/consulta_envios_postales.git"
   },
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial"
+    "electron",
+    "consulta",
+    "postales"
   ],
-  "author": "GitHub",
+  "author": "Willy Aguirre",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/marti1125/consulta_envios_postales.git"
