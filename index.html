@@ -3,67 +3,85 @@
   <head>
     <meta charset="UTF-8">
     <title>Consulta Envios Postales</title>
-    <link rel="stylesheet" href="./css/jquery.dataTables.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/datatables.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/app.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <h1>App</h1>
-    <button id="btnResult">Ver</button>
-    <div id="test">Test</div>
-
-    <table id="example" class="display" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                <th>Número de Detalle</th>
-                <th>Fecha y Hora de Trans. de detalle del DPO</th>
-                <th>Número y Año DEP general</th>
-                <th>Fecha y hora de arribo</th>
-                <th>Número de DPO</th>
-                <th>Año, Tipo de Servicio y N° Aviso de Llegada</th>
-                <th>Estado del envío</th>
-                <th>Número de Declaración Aduanera</th>
-                <th>Puerto de embarque</th>
-                <th>Remitente</th>
-                <th>Consignatario o destinatario</th>
-                <th>Dirección</th>
-                <th>Ubigeo</th>
-                <th>Descripción de la mercancía</th>
-                <th>Bultos recibidos</th>
-                <th>Peso recibido</th>
-                <th>Valor FOB verificado</th>
-                <th>Observaciones</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-              <th>Número de Detalle</th>
-              <th>Fecha y Hora de Trans. de detalle del DPO</th>
-              <th>Número y Año DEP general</th>
-              <th>Fecha y hora de arribo</th>
-              <th>Número de DPO</th>
-              <th>Año, Tipo de Servicio y N° Aviso de Llegada</th>
-              <th>Estado del envío</th>
-              <th>Número de Declaración Aduanera</th>
-              <th>Puerto de embarque</th>
-              <th>Remitente</th>
-              <th>Consignatario o destinatario</th>
-              <th>Dirección</th>
-              <th>Ubigeo</th>
-              <th>Descripción de la mercancía</th>
-              <th>Bultos recibidos</th>
-              <th>Peso recibido</th>
-              <th>Valor FOB verificado</th>
-              <th>Observaciones</th>
-            </tr>
-        </tfoot>
-
-          </tbody>
-    </table>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <h1>Consulta Envios Postales - Importa Fácil</h1>
+          </div>
+          <div class="col-md-12">
+            <div class="jumbotron">
+              <div class="form-inline">
+                <div class="form-group col-md-10">
+                  <input type="text" class="form-control col-md-10 w100" id="dpo" placeholder="Ingresar el número DPO">
+                </div>
+                <button id="btnResult" class="btn btn-default">Consultar</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="table-responsive">
+              <table id="tbconsulta" class="table-striped">
+                  <thead>
+                      <tr>
+                          <th>Número de Detalle</th>
+                          <th>Fecha y Hora de Trans. de detalle del DPO</th>
+                          <th>Número y Año DEP general</th>
+                          <th>Fecha y hora de arribo</th>
+                          <th>Número de DPO</th>
+                          <th>Año, Tipo de Servicio y N° Aviso de Llegada</th>
+                          <th>Estado del envío</th>
+                          <th>Número de Declaración Aduanera</th>
+                          <th>Puerto de embarque</th>
+                          <th>Remitente</th>
+                          <th>Consignatario o destinatario</th>
+                          <th>Dirección</th>
+                          <th>Ubigeo</th>
+                          <th>Descripción de la mercancía</th>
+                          <th>Bultos recibidos</th>
+                          <th>Peso recibido</th>
+                          <th>Valor FOB verificado</th>
+                          <th>Observaciones</th>
+                      </tr>
+                  </thead>
+                  <tfoot>
+                      <tr>
+                        <th>Número de Detalle</th>
+                        <th>Fecha y Hora de Trans. de detalle del DPO</th>
+                        <th>Número y Año DEP general</th>
+                        <th>Fecha y hora de arribo</th>
+                        <th>Número de DPO</th>
+                        <th>Año, Tipo de Servicio y N° Aviso de Llegada</th>
+                        <th>Estado del envío</th>
+                        <th>Número de Declaración Aduanera</th>
+                        <th>Puerto de embarque</th>
+                        <th>Remitente</th>
+                        <th>Consignatario o destinatario</th>
+                        <th>Dirección</th>
+                        <th>Ubigeo</th>
+                        <th>Descripción de la mercancía</th>
+                        <th>Bultos recibidos</th>
+                        <th>Peso recibido</th>
+                        <th>Valor FOB verificado</th>
+                        <th>Observaciones</th>
+                      </tr>
+                  </tfoot>
+              </table>
+            </div>
+          </div>
+      </div>
+    </div>
 
     <script>window.$ = window.jQuery = require('./js/jquery-1.12.3.js');</script>
-    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 
+    <script src="./js/datatables.min.js"></script>
     <script src="./js/app.js"></script>
-
   </body>
 
   <script>

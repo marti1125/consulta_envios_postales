@@ -1,6 +1,6 @@
 $(function() {
 
-  var table = $('#example').DataTable({
+  var tbconsulta = $('#tbconsulta').DataTable({
     "aoColumns": [
         { "data": "numDet" },
         { "data": "fecHoraTransmisionDPO" },
@@ -25,6 +25,8 @@ $(function() {
 
   $('#btnResult').click(function(){
 
+    tbconsulta.rows().remove().draw();
+
     var params = {"hdd_opcionConsulta": "2", "sel_tipServicio": "", "tipoBusqueda": "2", "txt_NumeroPostal": "CD189036253JP", "qpages1": "5",
                   "dojo.preventCache": "1467078518970"}
 
@@ -35,7 +37,7 @@ $(function() {
         success: function (response) {
           var json = JSON.parse(response);
           var data = json.resultado.lstRpta;
-          table.rows.add(data).draw();
+          tbconsulta.rows.add(data).draw();
         },
         error: function(jqXHR, textStatus, errorThrown) {
            console.log(textStatus, errorThrown);
