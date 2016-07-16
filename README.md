@@ -4,4 +4,10 @@
 
 ### ¿instalar y ejecutar?
 
-      npm install && npm start
+    npm install && npm start
+
+### Para poder empaquetar el proyecto
+
+    npm install electron-packager -g
+
+    electron-packager . --all
